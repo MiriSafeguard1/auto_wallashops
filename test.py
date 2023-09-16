@@ -38,5 +38,4 @@ driver.get(link.get_attribute("href"))
 wait = WebDriverWait(driver, 5)  # Wait for up to 10 seconds
 button = driver.find_element(By.CLASS_NAME, "js-add-to-cart")
 button.click() 
-
-print("login success")
+print("success")

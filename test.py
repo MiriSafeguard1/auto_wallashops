@@ -31,7 +31,7 @@ button.click()
 
 # click on some product
 wait = WebDriverWait(driver, 5)  # Wait for up to 10 seconds
-link = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "b-product-link")))
+link = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=\"homepage\"]/div/div[3]/div/div/div/div/div/div/div[2]/div/div/div[1]/div/div[3]/div[1]/a")))
 driver.get(link.get_attribute("href"))
 
 # click on add to cart -> by clicking on the button getting into the cart
